@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mision CSS y HTML</title>
+    <style>
+
+    .fondo {
+    --opacidad-negro: 0.7;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("img/background__welcome.jpg");
+    }
+
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <nav class="flex  bg-indigo-900 justify-center h-[3rem] fixed w-full">
+        <div class="flex  ml-[7rem] mt-2">
+            <img class="w-[1.8rem] h-[1.8rem] rounded-full ml-[60px]" src="img/logo.png" alt="">
+            <p class="text-white mt-1 w-[10rem]">R&A web</p>
+        </div>
+        <div class="justify-between flex flex-grow mr-[15rem] mt-2 text-lg font-medium">
+            <a class="text-pink-600 hover:text-pink-100 ml-[8rem]" href="#INICIO">INICIO</a>
+            <a class="text-pink-600 hover:text-pink-100 ml-[4rem]" href="#ACERCA">ACERCA</a>
+            <a class="text-pink-600 hover:text-pink-100 ml-[4rem]" href="#SERVICIOS">SERVICIOS</a>
+            <a class="text-pink-600 hover:text-pink-100 ml-[4rem]" href="#PORTAFOLIO">PORTAFOLIO</a>
+            <a class="text-pink-600 hover:text-pink-100 ml-[4rem]" href="#INICIO">TESTIMONIOS</a>
+            <a class="text-pink-600 hover:text-pink-100 ml-[4rem]" href="#INICIO">CONTACTO</a>
+        </div>
+    </nav>
+
+    <div class="fondo h-[42rem]">
+    <div id="INICIO" class=" flex flex-col justify-center items-center  ">
+        <h1 class="text-white text-5xl font-bold brightness-105 mt-[15rem]">Bienvenid@s</h1>
+        <h1 class="text-white text-5xl font-bold brightness-105">a mi sitio</h1>
+        <button class="bg-pink-600 border border-pink-600 hover:bg-pink-100 hover:text-pink-600 rounded-lg w-[10rem] h-[2rem] text-xl mt-[1rem] text-white brightness-105">Contactame</button>
+    </div>
+    </div>
+
+    <div class="bg-neutral-300 flex flex-grow  w-full" id="ACERCA">
+        <div class="w-[23rem] text-sm text-right ml-16 ">
+            <h1 class="text-base">Nakufanyia Mzaha</h1>
+            <small>Web Developer</small>
+                
+            <p class="mt-6 font-serif">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dolores saepe suscipit debitis obcae suscipit debitis obcaecdebitis repellat quaecdebitis ree suscipit debitis obcaecdebitis repellat quae suscipit debitis obcaecdebitis repellat quapellat quas amet minima  ipsum dolor sit amet consectetur adipisicing. </p>
+            <br>
+            <p class="font-serif">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dolores saepe suscipit debitis oe suscipit debie suscipit debitis obcaecdebitis repellat quatis obcaecdebitis repellat quabcaecatem elit. Optio pariatur reprehenderit, necessitatibus nisi similique consequuntur </p>    
+            <br>
+            <p class="font-serif">e suscipit debitis obcaecdebitis repellat quaLorem ipsum dolor sit amet consectetur, adipisicing elit. Iure dolores saepe suscipit debitis obca Optio pariatur reprehenderit, necessitatibus nisi similique consequuntur </p>
+            <br>   
+            <p class="font-serif"> Lorem ipsum dolor sit amet consectetur adipiimis deleniti illo. Porro quas aliquid tenetur ipsa ae suscipit debitis obcaecdebitis repellat quaut at et laborum consequuntur iusto.</p>
+
+            <div class="flex justify-start mb-[6rem]">
+                <button class="bg-pink-600 rounded-lg w-[10rem] h-[2rem] text-xl mt-[2rem] text-white border border-pink-600 hover:bg-pink-100 hover:text-pink-600">Descargar CV</button>
+            </div>
+        </div>
+        
+        <div class="ml-5 mr-5">
+            <img class="w-[380px] ml-[25px] mt-[5px]" src="img/foto__perfil.jpg" alt="">
+        </div>
+
+        <div class="ml-[1rem] w-[350px]">
+            <h1>Mis habilidades</h1>
+            <br>
+
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-600 italic font-serif text-sm">Desarrollo web</span>
+                <span class="text-gray-600 italic font-serif text-sm">90%</span>
+            </div>
+            <div class="w-full bg-gray-200  h-4 dark:bg-gray-700">
+                <div class="bg-neutral-600 h-4 " style="width: 90%"></div>
+              </div>
+            <br>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-600 italic font-serif text-sm" >Diseño web</span>
+                <span class="text-gray-600 italic font-serif text-sm">85%</span>
+            </div>
+            <div class="w-full bg-gray-200  h-4 dark:bg-gray-700">
+                <div class="bg-neutral-600 h-4 " style="width: 85%"></div>
+              </div>
+              <br>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-600 italic font-serif text-sm" >WPO y SEO</span>
+                <span class="text-gray-600 italic font-serif text-sm">80%</span>
+            </div>
+            <div class="w-full bg-gray-200  h-4 dark:bg-gray-700">
+                <div class="bg-neutral-600 h-4 " style="width: 80%"></div>
+              </div>
+            <br>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-600 italic font-serif text-sm">Desarrollo web y backend</span>
+                <span class="text-gray-600 italic font-serif text-sm">75%</span>
+            </div>
+            <div class="w-full bg-gray-200  h-4 dark:bg-gray-700">
+                <div class="bg-neutral-600 h-4" style="width: 75%"></div>
+              </div>
+            <br>
+            <div class="flex justify-between mb-1">
+                <span class="text-gray-600 italic font-serif text-sm">Social media y Marketing de contenidos</span>
+                <span class="text-gray-600 italic font-serif text-sm">60%</span>
+            </div>
+            <div class="w-full bg-gray-200  h-4 dark:bg-gray-700">
+                <div class="bg-neutral-600 h-4" style="width: 60%"></div>
+              </div>
+            <br>
+        </div>
+    </div>
+    <div class="mt-[1.5rem] " id="SERVICIOS">
+        <div class="flex justify-center items-center mb-[3rem]">
+            <h1  class="mt-5 border-y-2 border-pink-500 font-sm">SERVICIOS OFRECIDOS</h1>
+        </div>
+        
+        
+        <div class="flex flex-col justify-center items-center w-[80rem] ">
+            <div class="flex flex-grow justify-center items-center space-x-[8rem] ml-[3rem] mr-[3rem]">
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img  class="" src="img/service-code.svg" alt="">
+                    <h1>Programacion web</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae animi saepe a voluptatum praesentium id veritatis harum, tempora ad quisquam?</p>
+                </div>
+                <br>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img src="img/service-design.svg" alt="">
+                    <h1>Diseño web</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae animi saepe a voluptatum praesentium id veritatis harum, tempora ad quisquam?</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img src="img/service-wpo.svg" alt="">
+                    <h1>WPO</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae animi saepe a voluptatum praesentium id veritatis harum, tempora ad quisquam?</p>
+                </div>
+            </div>
+            <br>
+            <div class="flex flex-grow justify-center items-center space-x-[8rem] ml-[3rem] mr-[3rem] mt-10">
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img src="img/service-seo.svg" alt="">
+                    <h1>SEO</h1>
+                    <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae animi saepe a voluptatum praesentium id veritatis harum, tempora ad quisquam?</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img src="img/service-smo.svg" alt="">
+                    <h1>SMO</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae animi saepe a voluptatum praesentium id veritatis harum, tempora ad quisquam?</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img src="img/service-hosting.svg" alt="">
+                    <h1>Web Hosting</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae recusandae animi saepe a voluptatum praesentium id veritatis harum, tempora ad quisquam?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-neutral-300" id="PORTAFOLIO">
+        <div class="flex justify-center items-center mb-[3rem] mt-10">
+            <hr/>
+            <h1 class="mt-10 border-y-2 border-pink-500 font-sm">PORTAFOLIO</h1>
+            <hr/>
+        </div>
+            <div class="flex flex-col justify-center items-center w-[60rem] ml-[10rem] mt-[5rem] mb-[2rem]">
+                <div class="flex flex-grow justify-center items-center ml-[3rem] mr-[3rem]">
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <img  class="" src="img/portfolio-1.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <img src="img/portfolio-2.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <img src="img/portfolio-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-grow justify-center items-center ml-[3rem] mr-[3rem] ">
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <img src="img/portfolio-4.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <img src="img/portfolio-5.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center">
+                        <img src="img/portfolio-6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>
