@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-grow">
+    <div class="h-[41.75rem] bg-[#C9231B] w-[20.3rem] text-[#C9231B] absoulte">......................................</div>
+    <div class="mt-[5rem] ml-[10rem] w-[60rem] mr-[1rem]">
+        <div class="flex flex-grow justify-center mb-[5rem] mr-[17rem]">
+                <button class="relative right-[24rem]" onclick="location.href='index.html'"><img src="img/Union.png" alt=""></button>
+            <div class="">
+                <h1 class="text-xl font-bold">Registro Personas</h1>
+            </div>
+        </div>
+        
+        <form class="flex justify-center items-center flex-col mr-[15rem]" action="">
+            <div class="w-[55rem] flex flex-col justify-center ml-[5rem] space-y-5 ">
+                <div class="flex flex-grow space-x-10 ">
+                    <div class="flex flex-col w-full">
+                        <label class="font-bold" for="">Nombre</label>
+                        <input class="border border-2 border-[#ED00D5] h-[2.5rem] rounded-lg" type="text" name="" id="nombre" required>
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label class="font-bold" for="">Apellidos</label>
+                        <input class="border border-2 border-[#ED00D5] h-[2.5rem] rounded-lg" type="text" name="" id="apellidos" required>
+                    </div>
+                </div>
+                <div class="flex flex-grow space-x-10 ">
+                    <div class="flex flex-col w-full">
+                        <label class="font-bold" for="">Area</label>
+                        <select class="border border-2 border-[#ED00D5] h-[2.5rem] rounded-lg"  id="area" required>
+                            <option value="Docencia">Docencia</option>
+                            <option value="Tecnologia">Tecnologia</option>
+                            <option value="Marketing">Marketing</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label class="font-bold" for="">Usuario</label>
+                        <input class="border border-2 border-[#ED00D5] h-[2.5rem] rounded-lg" type="text" name="" id="usuario" required>
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label class="font-bold" for="">Edad</label>
+                        <input class="border border-2 border-[#ED00D5] h-[2.5rem] rounded-lg" type="text" name="" id="edad" required>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-5">
+                    <div class="flex flex-col w-full">
+                        <label class="font-bold" for="">Direccion</label>
+                        <input class="border border-2 border-[#ED00D5] h-[2.5rem] rounded-lg" type="text" name="" id="direccion" required>
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label class="font-bold" for="">Email</label>
+                        <input class="border border-2 border-[#ED00D5] h-[2.5rem] rounded-lg" type="text" name="" id="email" required>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="bg-[#C9231B] mt-10 flex justify-center items-center rounded-lg text-white text-2xl w-[10rem] h-[2.5rem]" onclick="guardardatos()" type="button" id="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="datos.js"></script>
+</body>
+</html>
