@@ -1,12 +1,7 @@
-
-
-console.log("hola");
-
 submit.addEventListener("submit", guardardatos)
 
 function guardardatos(){
 
-    console.log("hola1");
 
     let nombre1 = document.getElementById('nombre').value;
     let apellidos1 = document.getElementById('apellidos').value;
@@ -18,20 +13,17 @@ function guardardatos(){
     
     let nombrecompleto = nombre1 + " " + apellidos1;
 
-
-
-        localStorage.setItem("nombre", nombrecompleto);
-        localStorage.setItem("area", area1);
-        localStorage.setItem("usuario", usuario1);
-        localStorage.setItem("edad", edad1);
-        localStorage.setItem("direccion", direccion1);
-        localStorage.setItem("email", email1); 
-
     
         if(nombre1=="" || apellidos1=="" || area1=="" || usuario1=="" || edad1=="" || direccion1=="" || email1==""){
             alert("Un valor esta vacio rellenelo para continuar")
         }else{
-            location.href ='http://127.0.0.1:5500/index.html'
+            let nombcom = nombre1 + " " + apellidos1;
+
+            let nuevoUsuario =[{"nombrecompleto":nombcom,"area":area1,"usuario":usuario1,"edad":edad1,"email":email1}]
+
+            localStorage.setItem(localStorage.length, JSON.stringify(nuevoUsuario));
+
+            location.href ='./index.html'
         }
 
     
