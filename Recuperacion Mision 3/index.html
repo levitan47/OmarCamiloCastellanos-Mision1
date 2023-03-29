@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperacion Mision 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Inter'] w-full ">
+    <div class="flex flex-grow ">
+        <div class="bg-[#191A24] grid grid-cols-3 gap-4 w-[57rem] h-[41.75rem] collapse invisible sm:visible">
+            <div class="flex flex-col ml-8">
+                <img class="md:w-[15rem] md:h-[12rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible mb-5" src="img/1.png" alt="">
+                <img class="md:w-[15rem] md:h-[16.5rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible mb-5" src="img/2.png" alt="">
+                <img class="md:w-[15rem] md:h-[10.7rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible" src="img/3.png" alt="">
+            </div>
+            <div class="flex flex-col ml-3">
+                <img class="md:w-[15rem] md:h-[15.5rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible mb-5" src="img/4.png" alt="">
+                <img class="md:w-[15rem] md:h-[14.5rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible mb-5" src="img/5.png" alt="">
+                <img class="md:w-[15rem] md:h-[9.25rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible"  src="img/6.png" alt="">
+            </div>
+            <div class="flex flex-col mr-3">
+                <img class="md:w-[15rem] md:h-[8rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible mb-5 mt-5" src="img/7.png" alt="">
+                <img class="md:w-[15rem] md:h-[15rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible mb-5" src="img/8.png" alt="">
+                <img class="md:w-[15rem] md:h-[15rem] sm:w-[11rem] sm:h-[9rem] invisible sm:visible"  src="img/9.png" alt="">
+            </div>
+        </div>
+
+        <div id="container" class="bg-white w-[35rem]">
+            <div class="visible sm:invisible w-full" >
+                <img class=" fixed top-0 left-0 right-0 w-full h-[8rem] sm:h-[0.1px]"  src="img/9vs2.png" alt="">
+            </div>
+            <div class="flex justify-center flex-col w-[16rem] ml-[4.8rem]">
+                <div class="flex flex-grow items-center mt-[10rem] sm:mt-[4rem]">
+                    <img src="img/Union.png" alt="">
+                    <h1 class="text-[#3E334E] font-black text-2xl ml-2">Archint</h1>
+                </div>
+                <p class="mt-10">A new way to experience real state in the infinite virtual space.</p>
+            </div>
+
+            <div class="text-[#3E334E] flex flex-col justify-center mt-[3rem] w-[30rem]">
+                <div class="ml-[4.7rem] mb-5">
+                    <h1 class="text-[#3E334E] font-black text-2xl ml-1">Login</h1>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="flex flex-col">
+                        <p class="font-semibold text-sm ">Email</p>
+                        <input id="correo" class="border border-[#3E334E] indent-3 text-sm rounded-lg w-[20rem] h-[2.6rem]" type="text" placeholder="Ingrese el correo">
+                        <p id="emailmal"></p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="font-semibold text-sm ">Usuario</p>
+                        <input id="usuario" class="border border-[#3E334E] indent-3 text-sm rounded-lg  rounded w-[20rem] h-[2.6rem]" type="text" placeholder="Ingrese su usuario">
+                        <p id="usuariomal"></p>
+                    </div>
+                    <div class="flex flex-grow space-x-[6rem] mt-2">
+                        <div class="flex flex-grow">
+                            <input class="" type="checkbox" name="" id=""><p class="text-sm ml-2">Remember me</p> 
+                        </div>
+                       
+                        <a class="text-sm underline" onclick="Noservice1()">Forgot password</a>
+                    </div>
+                    <div class="flex flex-grow space-x-[2rem] mt-5">
+                        <button class="bg-[#3E334E] text-white text-center w-[9rem] h-[2.5rem] rounded" onclick="main()">Login</button>
+                        <button class="border border-[#3E334E] w-[9rem] h-[2.5rem] rounded " onclick="Noservice()">Sign up</button>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col mt-6 justify-center items-center">
+                    <small>Or, Login whith</small>
+                    <div class="flex flex-grow space-x-3 font-bold">
+                        <button class="border border-[#B7ADC9] rounded text-xs h-[1.8rem] w-[5rem]" onclick="facebook()">Facebook</button>
+                        <button class="border border-[#B7ADC9] rounded text-xs h-[1.8rem] w-[5rem]" onclick="Linked()">Linked in</button>
+                        <button class="border border-[#B7ADC9] rounded text-xs h-[1.8rem] w-[5rem]" onclick="Google()">Google</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

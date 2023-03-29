@@ -4,9 +4,10 @@ const dts = document.getElementById('datos')
 const docent = [];
 let arreglo=[];
 let html="";
+let j = 0
 
 
-for (let j = 0; j < localStorage.length; j++) {
+for (j; j < localStorage.length; j++) {
     var z = JSON.parse(localStorage.getItem(j))
     console.log(z);
 
